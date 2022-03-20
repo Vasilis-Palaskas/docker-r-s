@@ -53,4 +53,6 @@ DFT1 %>% group_by(MagicNumber) %>%
   summarize(pnL = sum(Profit)) %>%
   write_csv("03_output/result.csv")
 
-
+DFT1 %>% group_by(MagicNumber) %>% 
+  summarize(pnL = sum(Profit)) %>%
+  write_csv("03_output/result_copy.csv")
